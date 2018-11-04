@@ -1,4 +1,5 @@
 # Nona -- Experimental Nano
 
+***NOTE!***
 **Codes are out-of-date**  
-**EXE file can be used directly**
+**EXE file which is fresh can be used directly**
