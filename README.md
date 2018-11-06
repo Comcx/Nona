@@ -17,6 +17,6 @@
 Jump to the directory where Nona-x.x.exe lies,  
 input command: `./Nona-0.2.exe`
 
-<img width="660" height="450" src="https://github.com/Comcx/Nona/blob/master/usage.jpg"/>
+<img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/usage.jpg"/>
 
 
