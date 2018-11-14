@@ -14,7 +14,7 @@
 **EXE file which is fresh can be used directly**  
 <br><br>
 
-- ### Usage(Only support Win platform right now)
+### Usage(Only support Win platform right now)
 
 Jump to the directory where Nona-x.x.exe lies,  
 input command: `.\Nona-0.3.exe` or just double click the EXE file
@@ -22,7 +22,7 @@ input command: `.\Nona-0.3.exe` or just double click the EXE file
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl.jpg"/>
 
 <br><br>
-- ### Incomplete Intro  
+### Incomplete Intro  
 
 * #### Expression :=
   - ***Const***  
