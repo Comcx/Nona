@@ -11,7 +11,7 @@
 ```
 
 ***NOTE!***
-**Codes are out-of-date**  
+**Codes in `/src` are out-of-date**  
 **EXE file which is fresh can be used directly**  
 <br><br>
 
