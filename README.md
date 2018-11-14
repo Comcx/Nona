@@ -1,4 +1,4 @@
-# Nona -- Experimental Nano
+# Nona -- Experimental Nano with dependent types
 
 ```
    _____  _______  ____   ___ 
