@@ -1,6 +1,6 @@
 # Nona Programming Language 
 ***-- Experimental Nano with dependent types***  
-***Latest version: Nona-0.3***  
+***-- Latest version: Nona-0.3***  
 
 ```
    _____  _______  ____   ___ 
