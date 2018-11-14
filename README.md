@@ -1,6 +1,6 @@
 # Nona Programming Language 
 ***-- Experimental Nano with dependent types***  
-***-- Latest version: Nona-0.3***  
+***-- Latest version: Nona-0.4***  
 
 ```
    _____  _______  ____   ___ 
@@ -18,7 +18,7 @@
 ### Usage(Only support Win platform right now)
 
 Jump to the directory where Nona-x.x.exe lies,  
-input command: `.\Nona-0.3.exe` or just double click the EXE file
+input command: `.\Nona-0.4.exe` or just double click the EXE file
 
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl.jpg"/>
 
