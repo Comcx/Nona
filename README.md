@@ -1,5 +1,5 @@
 # Nona Programming Language 
-#            -- Experimental Nano with dependent types
+***            -- Experimental Nano with dependent types***  
 ***Latest version: Nona-0.3***  
 
 ```
