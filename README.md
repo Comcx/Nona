@@ -26,7 +26,7 @@ input command: `.\Nona-0.3.exe` or just double click the EXE file
   - ***Const***  
   - ***Variable***  
   - ***(Fun params*)***  
-  - ***(: identity type)***  
+  - ***(: Expression type)***  
   - ***(= (bindings) Expression)***  
   - ***(if Expression Expression Expression)***
   - ***(\ (params*) Expression)***  
