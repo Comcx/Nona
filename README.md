@@ -24,7 +24,7 @@ input command: `.\Nona-0.3.exe` or just double click the EXE file
 <br><br>
 - ### Incomplete Intro  
 
-* #### Expressin :=
+* #### Expression :=
   - ***Const***  
   - ***Variable***  
   - ***(Fun params)***  
