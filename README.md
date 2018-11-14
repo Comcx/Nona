@@ -1,4 +1,5 @@
 # Nona -- Experimental Nano with dependent types
+***Latest version: Nona-0.3***  
 
 ```
    _____  _______  ____   ___ 
@@ -15,7 +16,7 @@
 - ### Usage(Win)
 
 Jump to the directory where Nona-x.x.exe lies,  
-input command: `./Nona-0.2.exe` or just double click the EXE file
+input command: `./Nona-0.3.exe` or just double click the EXE file
 
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl.jpg"/>
 
