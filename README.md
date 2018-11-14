@@ -21,6 +21,7 @@ input command: `.\Nona-0.3.exe` or just double click the EXE file
 
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl.jpg"/>
 
+<br><br>
 - ### Incomplete Intro  
 
 * #### Expressin :=
