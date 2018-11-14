@@ -33,6 +33,7 @@ input command: `.\Nona-0.4.exe` or just double click the EXE file
   - ***(= (bindings) Expression)***  
   - ***(if Expression Expression Expression)***
   - ***(\ (params) Expression)***  
+  - ***(-> (: a t) a) -- for dependent function types***
  
  * #### Preluded terms:
    - ***(+ - * /) for Integers***  
