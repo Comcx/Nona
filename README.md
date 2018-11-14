@@ -37,7 +37,8 @@ input command: `.\Nona-0.3.exe` or just double click the EXE file
  * #### Preluded terms:
    - ***(+ - * /) for Integers***  
    - ***(Int Bool String) which is Set***  
-   - ***, for tuples***  
+   - ***(, :0 :1) for tuples***  
+   - ***:: for lists***  
    ...  
 
 
