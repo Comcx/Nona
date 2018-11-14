@@ -22,18 +22,19 @@ input command: `.\Nona-0.3.exe` or just double click the EXE file
 
 - ### Incomplete Intro  
 
-* Expressin :=
-  Const  
-  Variable  
-  (Fun params*)  
-  (: <identity> <type>)  
-  (= (<bindings>) Expression)  
-  (if Expression Expression Expression)
+* #### Expressin :=
+  - Const  
+  - Variable  
+  - (Fun params*)  
+  - (: <identity> <type>)  
+  - (= (<bindings>) Expression)  
+  - (if Expression Expression Expression)
+  - (\ (params*) Expression)  
  
- * Preluded terms:
-   (+ - * /) for Integers  
-   (Int Bool String) which is Set  
-   , for tuples  
+ * #### Preluded terms:
+   - (+ - * /) for Integers  
+   - (Int Bool String) which is Set  
+   - , for tuples  
    ...  
 
 
