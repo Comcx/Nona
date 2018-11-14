@@ -11,7 +11,8 @@
 
 ***NOTE!***
 **Codes are out-of-date**  
-**EXE file which is fresh can be used directly**
+**EXE file which is fresh can be used directly**  
+<br><br>
 
 - ### Usage(Only support Win platform right now)
 
@@ -25,11 +26,11 @@ input command: `.\Nona-0.3.exe` or just double click the EXE file
 * #### Expressin :=
   - ***Const***  
   - ***Variable***  
-  - ***(Fun params*)***  
+  - ***(Fun params)***  
   - ***(: Expression type)***  
   - ***(= (bindings) Expression)***  
   - ***(if Expression Expression Expression)***
-  - ***(\ (params*) Expression)***  
+  - ***(\ (params) Expression)***  
  
  * #### Preluded terms:
    - ***(+ - * /) for Integers***  
