@@ -41,10 +41,10 @@ input command: `.\Nona-0.5.exe` or just double click the EXE file
   <br>
  
 * #### Preluded terms:
- - ***(+ - * /) for Integers***  
- - ***(Int Bool String) which is Set***  
- - ***(, :0 :1) for tuples***  
- - ***:: for lists***  
- ...  
+  - ***(+ - * /) for Integers***  
+  - ***(Int Bool String) which is Set***  
+  - ***(, :0 :1) for tuples***  
+  - ***:: for lists***  
+  ...  
 
 
