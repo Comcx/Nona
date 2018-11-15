@@ -54,8 +54,8 @@ input command: `.\Nona-0.5.exe` or just double click the EXE file
 ```
 -- Example of function composition
 
-(= (: . (-> (: a Set) (-> (: b Set) (-> (: c Set) (-> (-> a b) (-> (-> b c) (-> a c))))))) 
-  (\ (a b c f g x) (g (f x))))
+(= (: . (-> (: a Set) (-> (: b Set) (-> (: c Set) (-> (-> b c) (-> (-> a b) (-> a c))))))) 
+  (\ (a b c f g x) (f (g x))))
 
 (= +1 (\ ((: x Int)) (+ x 1)))
 (= *2 (\ ((: x Int)) (* x 2)))
