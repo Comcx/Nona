@@ -1,4 +1,4 @@
-![Build Status](https://ci.pytorch.org/jenkins/job/pytorch-master/badge/icon)
+![Build Status](https://github.com/Comcx/Nona/blob/master/icon/icon.svg)
 # Nona Programming Language 
 ***-- Experimental Nano with dependent types***  
 ***-- Latest version: Nona-0.5***  
