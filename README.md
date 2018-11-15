@@ -1,6 +1,6 @@
 # Nona Programming Language 
 ***-- Experimental Nano with dependent types***  
-***-- Latest version: Nona-0.4***  
+***-- Latest version: Nona-0.5***  
 
 ```
    _____  _______  ____   ___ 
@@ -18,7 +18,7 @@
 ### Usage(Only support Win platform right now)
 
 Jump to the directory where Nona-x.x.exe lies,  
-input command: `.\Nona-0.4.exe` or just double click the EXE file
+input command: `.\Nona-0.5.exe` or just double click the EXE file
 
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl.jpg"/>
 
@@ -33,13 +33,18 @@ input command: `.\Nona-0.4.exe` or just double click the EXE file
   - ***(= (bindings) Expression)***  
   - ***(if Expression Expression Expression)***
   - ***(\ (params) Expression)***  
-  - ***(-> (: a t) a) -- for dependent function types***
+  - ***(-> (: a t) a) -- for dependent function types***  
+  <br>
+  
+* #### Declaration :=
+  - ***(= var Expression)***  
+  <br>
  
- * #### Preluded terms:
-   - ***(+ - * /) for Integers***  
-   - ***(Int Bool String) which is Set***  
-   - ***(, :0 :1) for tuples***  
-   - ***:: for lists***  
-   ...  
+* #### Preluded terms:
+ - ***(+ - * /) for Integers***  
+ - ***(Int Bool String) which is Set***  
+ - ***(, :0 :1) for tuples***  
+ - ***:: for lists***  
+ ...  
 
 
