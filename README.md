@@ -49,6 +49,7 @@ input command: `.\Nona-0.5.exe` or just double click the EXE file
 <br><br><br>
 
 ### >> Example
+**
 ```
 -- Example of function composition
 
@@ -62,7 +63,7 @@ input command: `.\Nona-0.5.exe` or just double click the EXE file
 
 
 ```
-
+**
 
 
 
