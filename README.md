@@ -46,5 +46,28 @@ input command: `.\Nona-0.5.exe` or just double click the EXE file
   - ***(, :0 :1) for tuples***  
   - ***:: for lists***  
   ...  
+<br><br><br>
+
+### >> Example
+```
+-- Example of function composition
+
+(= (: . (-> (: a Set) (-> (: b Set) (-> (: c Set) (-> (-> a b) (-> (-> b c) (-> a c))))))) 
+  (\ (a b c f g x) (g (f x))))
+
+(= +1 (\ ((: x Int)) (+ x 1)))
+(= *2 (\ ((: x Int)) (* x 2)))
+
+(. Int Int Int +1 *2)
+
+
+```
+
+
+
+
+
+
+
 
 
