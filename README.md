@@ -1,3 +1,4 @@
+![Build Status](https://ci.pytorch.org/jenkins/job/pytorch-master/badge/icon)
 # Nona Programming Language 
 ***-- Experimental Nano with dependent types***  
 ***-- Latest version: Nona-0.5***  
