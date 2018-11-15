@@ -50,8 +50,8 @@ input command: `.\Nona-0.5.exe` or just double click the EXE file
 <br><br><br>
 
 ### >> Example
-
-**```
+<b>
+```
 -- Example of function composition
 
 (= (: . (-> (: a Set) (-> (: b Set) (-> (: c Set) (-> (-> b c) (-> (-> a b) (-> a c))))))) 
@@ -63,8 +63,8 @@ input command: `.\Nona-0.5.exe` or just double click the EXE file
 (. Int Int Int +1 *2)
 
 
-```**
-
+```
+</b>
 
 
 
