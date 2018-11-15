@@ -27,7 +27,6 @@ input command: `.\Nona-0.5.exe` or just double click the EXE file
 ### >> Incomplete Intro  
 
 * #### Expression :=
-  - ***Const***  
   - ***Variable***  
   - ***(Fun params)***  
   - ***(: Expression type)***  
@@ -42,7 +41,10 @@ input command: `.\Nona-0.5.exe` or just double click the EXE file
   <br>
  
 * #### Preluded terms:
+  - ***(0 1 2 ..) whose type's `Void -> Int`***  
   - ***(+ - * /) for Integers***  
+  - ***"_" whose type's `Void -> String`***  
+  - ***(true false) whose type's `Void -> Bool`***  
   - ***(Int Bool String) which is Set***  
   - ***(, :0 :1) for tuples***  
   - ***:: for lists***  
