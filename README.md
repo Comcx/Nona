@@ -41,10 +41,10 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
   <br>
  
 * #### Preluded terms:
-  - ***(0 1 2 ..) whose type's `Void -> Int`***  
+  - ***(0 1 2 ..) with type `Void -> Int`***  
   - ***(+ - * /) for Integers***  
-  - ***"_" whose type's `Void -> String`***  
-  - ***(true false) whose type's `Void -> Bool`***  
+  - ***"_" with type `Void -> String`***  
+  - ***(true false) with type `Void -> Bool`***  
   - ***(Int Bool String) which is Set***  
   - ***(, :0 :1) for tuples***  
   - ***:: for lists***  
