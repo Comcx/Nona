@@ -84,5 +84,23 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
    (fact y))
 ```
 
+```lisp
+-- Example of power function
+
+(= (: f (-> (-> Int (-> Int Int)) (-> Int (-> Int Int)))) 
+  (\ (f x n) (if (== n 0) 1 (* x (f x (- n 1))))))
+
+(= ^ (fix (-> Int (-> Int Int)) f))
+
+(^ 2 10) -- which yields 1024
+
+```
+
+
+
+
+
+
+
 
 
