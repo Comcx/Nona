@@ -1,7 +1,7 @@
 ![Build Status](https://github.com/Comcx/Nona/blob/master/icon/icon.svg)
 # Nona the Programming Language 
 ***-- Experimental Nano with dependent types***  
-***-- Latest version: Nona-0.5***  
+***-- Latest version: Nona-0.6***  
 
 ```
    _____  _______  ____   ___ 
@@ -19,7 +19,7 @@
 ### >> Usage(Only support Win platform right now)
 
 Jump to the directory where Nona-x.x.exe lies,  
-input command: `.\Nona-0.5.exe` or just double click the EXE file
+input command: `.\Nona-0.6.exe` or just double click the EXE file
 
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl.jpg"/>
 
@@ -59,10 +59,7 @@ input command: `.\Nona-0.5.exe` or just double click the EXE file
 (= (: . (-> (: a Set) (-> (: b Set) (-> (: c Set) (-> (-> b c) (-> (-> a b) (-> a c))))))) 
   (\ (a b c f g x) (f (g x))))
 
-(= +1 (\ ((: x Int)) (+ x 1)))
-(= *2 (\ ((: x Int)) (* x 2)))
-
-(. Int Int Int +1 *2)
+(. Int Int Int (+ 1) (* 2))
 
 
 ```
