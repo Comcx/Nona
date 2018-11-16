@@ -87,10 +87,11 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
 ```lisp
 -- Example of power function
 
-(= (: f (-> (-> Int (-> Int Int)) (-> Int (-> Int Int)))) 
+(= PT (-> Int (-> Int Int)))
+(= (: f (-> PT PT)) 
   (\ (f x n) (if (== n 0) 1 (* x (f x (- n 1))))))
 
-(= ^ (fix (-> Int (-> Int Int)) f))
+(= ^ (fix PT f))
 
 (^ 2 10) -- which yields 1024
 
