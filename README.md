@@ -64,9 +64,24 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
 
 ```
 
+···
+-- More examples with fix(Y combinator) usage
 
+(= (((: add (-> Int (-> Int Int)))
+	    (\ (x y) (+ x y)))
 
+    (x 2) -- x the Integer
+    (y 5)
 
+    ((: not (-> Bool Bool)) 
+    	(\ (x) (if x false true)))
+
+    ((: fac (-> (-> Int Int) (-> Int Int))) 
+      (\ (f n) (if (== n 0) 1 (* (f (- n 1)) n))))
+    (fact (fix (-> Int Int) fac)))
+
+   (fact y))
+···
 
 
 
