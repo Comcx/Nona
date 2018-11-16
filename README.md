@@ -53,7 +53,7 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
 
 ### >> Example
 
-```lisp
+```haskell
 -- Example of function composition
 
 (= (: . (-> (: a Set) (-> (: b Set) (-> (: c Set) (-> (-> b c) (-> (-> a b) (-> a c))))))) 
@@ -65,7 +65,7 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
 ```
 
 
-```lisp
+```haskell
 -- More examples with fix(Y combinator) usage
 
 (= (((: add (-> Int (-> Int Int)))
@@ -84,7 +84,7 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
    (fact y))
 ```
 
-```lisp
+```haskell
 -- Example of power function
 
 (= PT (-> Int (-> Int Int)))
