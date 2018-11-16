@@ -64,7 +64,8 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
 
 ```
 
-···
+
+```
 -- More examples with fix(Y combinator) usage
 
 (= (((: add (-> Int (-> Int Int)))
@@ -81,7 +82,7 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
     (fact (fix (-> Int Int) fac)))
 
    (fact y))
-···
+```
 
 
 
