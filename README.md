@@ -88,7 +88,7 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
 -- Example of power function
 
 (= PT (-> Int (-> Int Int)))
-(= (: f (-> PT PT)) 
+(= (: f (-> (-> Int (-> Int Int)) (-> Int (-> Int Int)))) 
   (\ (f x n) (if (== n 0) 1 (* x (f x (- n 1))))))
 
 (= ^ (fix PT f))
