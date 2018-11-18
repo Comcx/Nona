@@ -54,7 +54,7 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
 ### >> Example
 
 ```scala
-(def ( -- The test file
+(def Test ( -- The test file
 
 
 -- Ploymorphism
