@@ -1,6 +1,6 @@
 
 
-(def ( -- The test file
+(def Test ( -- The test file
 
 
 -- Ploymorphism
