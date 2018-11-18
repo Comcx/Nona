@@ -21,7 +21,7 @@
 Jump to the directory where Nona-x.x.exe lies,  
 input command: `.\Nona-0.6.exe` or just double click the EXE file
 
-<img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl.jpg"/>
+<img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/Nona-0.6.jpg"/>
 
 <br><br>
 ### >> Incomplete Intro  
