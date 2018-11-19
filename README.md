@@ -1,5 +1,5 @@
 ![Build Status](https://github.com/Comcx/Nona/blob/master/icon/icon.svg)
-# Nona the Lazy Programming Language with Dependent Types
+# Nona : Lazy Programming Language with Dependent Types
 ***-- Experimental Nano with dependent types***  
 ***-- Latest version: Nona-0.6***  
 
