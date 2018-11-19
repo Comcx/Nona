@@ -3,12 +3,13 @@
 (def Test ( -- The test file
 
 
--- Ploymorphism
+-- Ploymorphism & Dependent types
 (= (: id (-> (: a Set) (-> a a))) (\ (a x) x))
 (= (: . (-> (: a Set) (-> (: b Set) (-> (: c Set) (-> (-> b c) (-> (-> a b) (-> a c))))))) 
     (\ (a b c f g x) (f (g x))))
 (= (: weird (-> (: x Int) (-> (if (== x 0) Int Bool) String)))
 	(\ (x a) "OK"))
+
 
 -- Boolean functions
 (= (: not (-> Bool Bool)) (\ (b) (if b false true)))
@@ -17,18 +18,33 @@
 (= (: xor (-> Bool (-> Bool Bool)))
 	(\ (a b) (if (and (or a b) (not (and a b))) true false)))
 
+(= h (= (((: g (-> Int Int)) (\ (x) (+ x x))) ((: y Int) 6)) (g y)))
+
+
 -- Recursion
 (= (: fact (-> Int Int))
    (= (((: f (-> (-> Int Int) (-> Int Int)))
-	      (\ (f n) (if (== n 0) 1 (* n (f (- n 1)))))))
+	      (\ (g n) (if (== n 0) 1 (* n (g (- n 1)))))))
 	 (fix (-> Int Int) f)))
+
+
+(= foldl (= (((: T Set) (-> (: a Set) (-> (: b Set) (-> (-> b (-> a b)) (-> b (-> (List a) b))))))
+             ((: f (-> T (-> (: a Set) (-> (: b Set) (-> (-> b (-> a b)) (-> b (-> (List a) b)))))))
+                   (\ (f a b g x l) (if (nil? a l) x (f a b g (g x (head a l)) (tail a l))))))
+	        (fix T f)))
+
+(= circle (= (((: f (-> (-> (: a Set) (-> a (-> Int (List a)))) 
+	                    (-> (: a Set) (-> a (-> Int (List a)))))) 
+	                (\ (f a x n) (if (== n 0) ([] a) (:: a x (f a x (- n 1)))))))
+             (fix (-> (: a Set) (-> a (-> Int (List a)))) f)))
+
 
 (= ^ (= ((PT (-> Int (-> Int Int)))
          ((: f (-> PT (-> Int (-> Int Int))))
            (\ (f x n) (if (== n 0) 1 (* x (f x (- n 1)))))))
-      (fix PT f)))))
+       (fix PT f)))))
 
--- (= (: foldl (-> (: a Set) (-> (: b Set) (-> (-> b (-> a b)) (-> b (List a)))))) undefined)
+
 
 
 
