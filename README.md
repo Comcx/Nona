@@ -51,7 +51,7 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
   ...  
 <br><br><br>
 
-### >> Example
+### >> Examples
 
 ```scala
 (def Test ( -- The test file
@@ -87,7 +87,11 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
 
 ```
 
+### >> Drawbacks
 
+* Not support weak normal head form(WNHF), not completely lazy...
+* Lack support of pattern matching for dependent types
+* ...
 
 
 
