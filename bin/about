@@ -5,7 +5,7 @@ Nona-0.1  Simple typed lambda calculous
 Nona-0.2  Tried to add ploymorphism
 Nona-0.3  Tried to add dependent types
 Nona-0.4  ..
-Nona-0.5  Basic Dependent type system
+Nona-0.5  Basic Dependent type system(not complete!!)
 Nona-0.6x Tried being lazy expilicitly
 Nona-0.6  Basic Dependent type system with Y combinator with lazy calculation
 
