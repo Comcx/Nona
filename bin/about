@@ -8,6 +8,6 @@ Nona-0.4  ..
 Nona-0.5  Basic Dependent type system(not complete!!)
 Nona-0.6x Tried being lazy expilicitly but failed(WNHF problem)
 Nona-0.6  Basic Dependent type system with Y combinator with lazy calculation
-
+Nona-0.6v Fixed Name problem but not sure
 
 
