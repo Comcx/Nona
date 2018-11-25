@@ -1,7 +1,7 @@
 ![Build Status](https://github.com/Comcx/Nona/blob/master/icon/icon.svg)
 # Nona : Lazy Programming Language with Dependent Types
 ***-- Experimental Nano with dependent types***  
-***-- Latest version: Nona-0.6***  
+***-- Latest version: Nona-0.6v***  
 
 ```
    __________________________
@@ -19,7 +19,7 @@
 ### >> Usage(Only support Win platform right now)
 
 Jump to the directory where Nona-x.x.exe lies,  
-input command: `.\Nona-0.6.exe` or just double click the EXE file
+input command: `.\Nona-0.6v.exe` or just double click the EXE file
 
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/Nona-0.6.jpg"/>
 
