@@ -46,8 +46,8 @@ input command: `.\Nona-0.6.exe` or just double click the EXE file
   - ***"_" with type `Void -> String`***  
   - ***(true false) with type `Void -> Bool`***  
   - ***(Int Bool String) which is Set***  
-  - ***(, :0 :1) for tuples***  
-  - ***:: for lists***  
+  - ***(, :0 :1) for tuples !note deleted right now!!***  
+  - ***:: for constructors***  
   ...  
 <br><br><br>
 
