@@ -70,7 +70,7 @@ input command: `.\Nona-0.7.0.exe` or just double click the EXE file
 ### >> Examples
 
 ```scala
-(def Test ( -- The test file
+(Module Test ( -- The test file
 
 
 -- Ploymorphism
