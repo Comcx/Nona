@@ -52,6 +52,21 @@ input command: `.\Nona-0.7.0.exe` or just double click the EXE file
   ...  
 <br><br><br>
 
+* #### REPL use  
+  
+  - **Global environment:**  
+    You can type in `(= <variable> <expression>)` to add variable to global environment  
+    
+  - **Commands:**  
+    `:q` to quit repl  
+    `:?` to ask for help  
+    `:t` to show type info  
+    `:v` to show current version  
+    `:na` to load defs  
+    `:no` to load *.no files  
+    ...  
+
+
 ### >> Examples
 
 ```scala
