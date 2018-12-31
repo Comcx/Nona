@@ -41,13 +41,14 @@ input command: `.\Nona-0.7.0.exe` or just double click the EXE file
   <br>
  
 * #### Preluded terms:
-  - ***(0 1 2 ..) with type `Void -> Int`***  
+  - ***(0 1 2 ..) with type `Int`***  
   - ***(+ - * /) for Integers***  
-  - ***"_" with type `Void -> String`***  
+  - ***"_" with type `String`***  
   - ***(true false) with type `Void -> Bool`***  
-  - ***(Int Bool String) which is Set***  
+  - ***(Int Bool String Symbol) which is Set***  
   - ***(, :0 :1) for tuples !note deleted right now!!***  
-  - ***:: for constructors***  
+  - ***:: () for lists***
+  - ***print to print***
   ...  
 <br><br><br>
 
