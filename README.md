@@ -27,14 +27,14 @@ input command: `.\Nona-0.7.3.exe` or just double click the EXE file
 ### >> Incomplete Intro  
 
 * #### Expression :=
-  - ***Variable***  
-  - ***(Fun params)  Lambda application***  
-  - ***(: Expression type) Type signature***  
-  - ***(= (bindings) Expression) Bindings***  
-  - ***(=: (bindings) Expression) Inductive families***  
-  - ***(if Expression Expression Expression) Conditional***
-  - ***(\ (params) Expression) Lambda abstraction***  
-  - ***(-> (: a t) b) -- for dependent function types***  
+  |Variable|  
+  |(Fun params)                         | Lambda application|
+  |(: Expression type)                  | Type signature|
+  |(= (bindings) Expression)            | Bindings|
+  |(=: (bindings) Expression)           | Inductive families|
+  |(if Expression Expression Expression)| Conditional|
+  |(\ (params) Expression)              | Lambda abstraction|
+  |(-> (: a t) b)                       | Dependent function space|
   <br>
   
 * #### Declaration :=
