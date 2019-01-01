@@ -53,7 +53,7 @@ input command: `.\Nona-0.7.3.exe` or just double click the EXE file
   |***(Int Bool String Symbol)*** |which is Set|  
   |***(, :0 :1)***                |for tuples !note deleted right now!!|  
   |***:: () list***               |for lists|
-  |***print*** to print|
+  |***print***                    |to print|
   ...  
 <br><br><br>
 
