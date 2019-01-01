@@ -1,13 +1,15 @@
 EXE files of old versions here
 
 [log]:
-Nona-0.1  Simple typed lambda calculous
-Nona-0.2  Tried to add ploymorphism
-Nona-0.3  Tried to add dependent types
-Nona-0.4  ..
-Nona-0.5  Basic Dependent type system(not complete!!)
-Nona-0.6x Tried being lazy expilicitly but failed(WNHF problem)
-Nona-0.6  Basic Dependent type system with Y combinator with lazy calculation
-Nona-0.6v Fixed Name problem but not sure
+Nona-0.1    Simple typed lambda calculous
+Nona-0.2    Tried to add ploymorphism
+Nona-0.3    Tried to add dependent types
+Nona-0.4    ..
+Nona-0.5    Basic Dependent type system(not complete!!)
+Nona-0.6x   Tried being lazy expilicitly but failed(WNHF problem)
+Nona-0.6    Basic Dependent type system with Y combinator with lazy calculation
+Nona-0.6v   Fixed Name problem but not sure
+Nona-0.7.0  Rebuilt with IO operations
+Nona-0.7.1  (->) Syntax sugar with quote syntax
 
 
