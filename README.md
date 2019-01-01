@@ -1,5 +1,5 @@
 ![Build Status](https://github.com/Comcx/Nona/blob/master/icon/icon.svg)
-[![Documentation Status](https://readthedocs.org/projects/idris/badge/?version=latest)](https://readthedocs.org/projects/idris/?badge=latest)
+[![Documentation Status](https://github.com/Comcx/Nona/blob/master/icon/doc-passing.svg)
 # Nona : Lazy Programming Language with Dependent Types
 ***-- Experimental Nano with dependent types***  
 ***-- Latest version: Nona-0.7.3***  
