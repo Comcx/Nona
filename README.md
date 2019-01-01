@@ -16,7 +16,9 @@
 **EXE file which is fresh can be used directly**  
 <br><br>
 
-### >> Usage(Only support Win platform right now)
+### >> Getting Started!
+
+Nona only support `Windows 64bits` platform right now.  
 
 Jump to the directory where Nona-x.x.exe lies,  
 input command: `.\Nona-0.7.3.exe` or just double click the EXE file
