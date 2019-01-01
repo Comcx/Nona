@@ -27,9 +27,9 @@ input command: `.\Nona-0.7.3.exe` or just double click the EXE file
 ### >> Incomplete Intro  
 
 * #### Expression :=
-  |Format                               | Explaination|
+  |Format                               | Explanation|
   |-------------------------------------|-------------|
-  |Variable|  
+  |***Variable***                       | Single variable|
   |(Fun params)                         | Lambda application|
   |(: Expression type)                  | Type signature|
   |(= (bindings) Expression)            | Bindings|
