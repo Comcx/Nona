@@ -1,7 +1,7 @@
 ![Build Status](https://github.com/Comcx/Nona/blob/master/icon/icon.svg)
 # Nona : Lazy Programming Language with Dependent Types
 ***-- Experimental Nano with dependent types***  
-***-- Latest version: Nona-0.7.2***  
+***-- Latest version: Nona-0.7.3***  
 
 ```
    __________________________
@@ -19,7 +19,7 @@
 ### >> Usage(Only support Win platform right now)
 
 Jump to the directory where Nona-x.x.exe lies,  
-input command: `.\Nona-0.7.2.exe` or just double click the EXE file
+input command: `.\Nona-0.7.3.exe` or just double click the EXE file
 
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl-0.7.0.jpg"/>
 
@@ -28,11 +28,12 @@ input command: `.\Nona-0.7.2.exe` or just double click the EXE file
 
 * #### Expression :=
   - ***Variable***  
-  - ***(Fun params)***  
-  - ***(: Expression type)***  
-  - ***(= (bindings) Expression)***  
-  - ***(if Expression Expression Expression)***
-  - ***(\ (params) Expression)***  
+  - ***(Fun params)  Lambda application***  
+  - ***(: Expression type) Type signature***  
+  - ***(= (bindings) Expression) Bindings***  
+  - ***(=: (bindings) Expression) Inductive families***  
+  - ***(if Expression Expression Expression) Conditional***
+  - ***(\ (params) Expression) Lambda abstraction***  
   - ***(-> (: a t) b) -- for dependent function types***  
   <br>
   
