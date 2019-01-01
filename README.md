@@ -41,6 +41,7 @@ input command: `.\Nona-0.7.3.exe` or just double click the EXE file
   
 * #### Declaration :=
   - ***(= var Expression)***  
+  - ***(=: var Type)***
   <br>
  
 * #### Preluded terms:
