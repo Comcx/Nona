@@ -16,7 +16,7 @@
 **EXE file which is fresh can be used directly**  
 <br><br>
 
-### >> Getting Started!
+## Getting Started!
 
 Nona only support `Windows 64bits` platform right now.  
 
@@ -26,7 +26,7 @@ input command: `.\Nona-0.7.3.exe` or just double click the EXE file
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl-0.7.0.jpg"/>
 
 <br><br>
-### >> Incomplete Intro  
+## Incomplete Intro  
 
 * #### Expression :=
   |Format                                     | Explanation|
@@ -41,12 +41,12 @@ input command: `.\Nona-0.7.3.exe` or just double click the EXE file
   |***(-> (: a t) b)***                       | Dependent function space|
   <br>
   
-* #### Declaration :=
+* ### Declaration :=
   - ***(= var Expression)***  
   - ***(=: var Type)***
   <br>
  
-* #### Preluded terms:
+* ### Preluded terms:
   |Terms                          |Explanation|
   |-------------------------------|-----------|
   |***(0 1 2 ..)***               |with type `Int`| 
@@ -60,7 +60,7 @@ input command: `.\Nona-0.7.3.exe` or just double click the EXE file
   ...  
 <br><br><br>
 
-* #### REPL use  
+* ### REPL use  
   
   - **Global environment:**  
     You can type in `(= <variable> <expression>)` to add variable to global environment  
@@ -75,7 +75,7 @@ input command: `.\Nona-0.7.3.exe` or just double click the EXE file
     ...  
 
 
-### >> Examples
+## Examples
 
 ```scala
 (Module Test ( -- The test file
@@ -111,7 +111,7 @@ input command: `.\Nona-0.7.3.exe` or just double click the EXE file
 
 ```
 
-### >> Drawbacks
+## Drawbacks
 
 * Not support weak normal head form(WNHF), not completely lazy...
 * Lack support of pattern matching for dependent types
