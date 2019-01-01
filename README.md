@@ -1,7 +1,7 @@
 ![Build Status](https://github.com/Comcx/Nona/blob/master/icon/icon.svg)
 # Nona : Lazy Programming Language with Dependent Types
 ***-- Experimental Nano with dependent types***  
-***-- Latest version: Nona-0.7.0***  
+***-- Latest version: Nona-0.7.1***  
 
 ```
    __________________________
@@ -19,7 +19,7 @@
 ### >> Usage(Only support Win platform right now)
 
 Jump to the directory where Nona-x.x.exe lies,  
-input command: `.\Nona-0.7.0.exe` or just double click the EXE file
+input command: `.\Nona-0.7.1.exe` or just double click the EXE file
 
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl-0.7.0.jpg"/>
 
@@ -74,17 +74,17 @@ input command: `.\Nona-0.7.0.exe` or just double click the EXE file
 
 
 -- Ploymorphism
-(= (: id (-> (: a Set) (-> a a))) (\ (a x) x))
-(= (: . (-> (: a Set) (-> (: b Set) (-> (: c Set) (-> (-> b c) (-> (-> a b) (-> a c))))))) 
+(= (: id (-> (: a Set) a a)) (\ (a x) x))
+(= (: . (-> (: a Set) (: b Set) (: c Set) (-> b c) (-> a b) (-> a c)))
     (\ (a b c f g x) (f (g x))))
-(= (: weird (-> (: x Int) (-> (if (== x 0) Int Bool) String)))
+(= (: weird (-> (: x Int) (if (== x 0) Int Bool) String))
 	(\ (x a) "OK"))
 
 -- Boolean functions
 (= (: not (-> Bool Bool)) (\ (b) (if b false true)))
-(= (: and (-> Bool (-> Bool Bool))) (\ (a b) (if a b false)))
-(= (: or  (-> Bool (-> Bool Bool))) (\ (a b) (if a true b)))
-(= (: xor (-> Bool (-> Bool Bool)))
+(= (: and (-> Bool Bool Bool)) (\ (a b) (if a b false)))
+(= (: or  (-> Bool Bool Bool)) (\ (a b) (if a true b)))
+(= (: xor (-> Bool Bool Bool))
 	(\ (a b) (if (and (or a b) (not (and a b))) true false)))
 
 -- Recursion
@@ -93,8 +93,8 @@ input command: `.\Nona-0.7.0.exe` or just double click the EXE file
 	      (\ (f n) (if (== n 0) 1 (* n (f (- n 1)))))))
 	 (fix (-> Int Int) f)))
 
-(= ^ (= ((PT (-> Int (-> Int Int)))
-         ((: f (-> PT (-> Int (-> Int Int))))
+(= ^ (= ((PT (-> Int Int Int))
+         ((: f (-> PT (-> Int Int Int)))
            (\ (f x n) (if (== n 0) 1 (* x (f x (- n 1)))))))
       (fix PT f)))))
 
