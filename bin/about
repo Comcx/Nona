@@ -12,5 +12,5 @@ Nona-0.6v   Fixed Name problem but not sure
 Nona-0.7.0  Rebuilt with IO operations
 Nona-0.7.1  (->) Syntax sugar with quote syntax
 Nona-0.7.2  list syntax sugar added
-Nona-0.7.3  Inductive families added in expressions
+Nona-0.7.3  Naive inductive families added
 
