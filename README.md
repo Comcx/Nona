@@ -97,6 +97,11 @@ input command: `.\Nona-0.7.3.exe` or just double click the EXE file
 (= (: xor (-> Bool Bool Bool))
 	(\ (a b) (if (and (or a b) (not (and a b))) true false)))
 
+-- Inductive dependent sum pair
+(=: Sum (-> (: A Set) (: B (-> A Set)) Set))
+(=: , (-> (: A Set) (: B (-> A Set)) (: a A) (: b (B a)) (Sum A B)))
+
+
 -- Recursion
 (= (: fact (-> Int Int))
    (= (((: f (-> (-> Int Int) (-> Int Int)))
