@@ -13,5 +13,5 @@ Nona-0.7.0  Rebuilt with IO operations
 Nona-0.7.1  (->) Syntax sugar with quote syntax
 Nona-0.7.2  list syntax sugar added
 Nona-0.7.3  Naive inductive families added
-N
+Nona-0.7.4  List operators completed
 
