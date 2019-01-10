@@ -3,7 +3,7 @@
 ![Documentation Status](https://github.com/Comcx/Nona/blob/master/icon/doc-passing.svg)  
   
 ***Experimental Nano with dependent types***  
-***Latest version: Nona-0.7.5***  
+***Latest version: Nona-0.7.6***  
 
 ```
    __________________________
@@ -23,7 +23,7 @@
 Nona only support `Windows 64bits` platform right now.  
 
 Jump to the directory where Nona-x.x.exe lies,  
-input command: `.\Nona-0.7.5.exe` or just double click the EXE file
+input command: `.\Nona-0.7.6.exe` or just double click the EXE file
 
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl-0.7.0.jpg"/>
 
