@@ -14,5 +14,6 @@ Nona-0.7.1  (->) Syntax sugar with quote syntax
 Nona-0.7.2  list syntax sugar added
 Nona-0.7.3  Naive inductive families added
 Nona-0.7.4  List operators completed
-Nona-0.7.5  Lambda constant syntax
+Nona-0.7.5  Lambda constant syntax [update] implement is wrong! Abandoned
+Nona-0.7.6  Inductive families completed; record syntax added
 
