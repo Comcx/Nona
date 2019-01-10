@@ -68,12 +68,12 @@ input command: `.\Nona-0.7.6.exe` or just double click the EXE file
     You can type in `(= <variable> <expression>)` to add variable to global environment  
     
   - **Commands:**  
-    `:q` to quit repl  
-    `:?` to ask for help  
-    `:t` to show type info  
-    `:v` to show current version  
-    `:na` to load defs  
-    `:no` to load *.no files  
+    `version` to show current version  
+    `(quit)` to quit repl  
+    `(help)` to ask for help  
+    `(type <expr>)` to show type info  
+    `(na <file>)` to load defs  
+    `(no <file>)` to load *.no files  
     ...  
 
 
