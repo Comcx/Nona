@@ -3,7 +3,7 @@
 ![Documentation Status](https://github.com/Comcx/Nona/blob/master/icon/doc-passing.svg)  
   
 ***Experimental Nano with dependent types***  
-***Latest version: Nona-0.7.7***  
+***Latest version: Nona-0.7.8***  
 
 ```
    __________________________
@@ -23,7 +23,7 @@
 Nona only support `Windows 64bits` platform right now.  
 
 Jump to the directory where Nona-x.x.exe lies,  
-input command: `.\Nona-0.7.7.exe` or just double click the EXE file
+input command: `.\Nona-0.7.8.exe` or just double click the EXE file
 
 <img width="700" height="450" src="https://github.com/Comcx/Nona/blob/master/repl-0.7.0.jpg"/>
 
@@ -49,23 +49,25 @@ input command: `.\Nona-0.7.7.exe` or just double click the EXE file
   <br>
  
 * ### Preluded terms:
-  |Terms                          |Explanation|
-  |-------------------------------|-----------|
-  |***(0 1 2 ..)***               |with type `Int`| 
-  |***(+ - * /)***                |for Integers|  
-  |***"_"***                      |with type `String`|  
-  |***(true false)***             |with type `Bool`|  
-  |***(Int Bool String Symbol)*** |which is Set|  
-  |***(, :0 :1)***                |for tuples !note deleted right now!!|  
-  |***:: () list***               |for lists|
-  |***print***                    |to print|
+  |Terms                              |Explanation|
+  |-----------------------------------|-----------|
+  |***(0 1 2 ..)***                   |with type `Int`| 
+  |***(+ - * /)***                    |for Integers|  
+  |***"_"***                          |with type `String`|  
+  |***(true false)***                 |with type `Bool`|  
+  |***(Int Bool String Symbol IO)***  |which is Set|  
+  |***(, :0 :1)***                    |for tuples !note deleted right now!!|  
+  |***:: () list***                   |for lists|
+  |***print***                        |to print|
   ...  
 <br><br><br>
 
 * ### REPL use  
   
   - **Global environment:**  
-    You can type in `(= <variable> <expression>)` to add variable to global environment  
+    You can:  
+      type in `(= <variable> <expression>)` to add variable to global environment;  
+      type in `(=: <variable> <type>)` to construct new types to global environment.  
     
   - **Commands:**  
     `version` to show current version  
