@@ -20,8 +20,6 @@
 
 (= h (= (((: g (-> Int Int)) (\ (x) (+ x x))) ((: y Int) 6)) (g y)))
 
-(= (: & (-> (: A Set) A Set Set))
-	(\ (A a b) (:: A Set Set a b)))
 
 
 -- Inductive dependent sum pair
@@ -35,16 +33,23 @@
 	      (\ (g n) (if (== n 0) 1 (* n (g (- n 1)))))))
 	 (fix (-> Int Int) f)))
 
+(= (: f (-> (-> (: b Set) (-> b Int b) b (List Int) b)
+     	    (-> (: b Set) (-> b Int b) b (List Int) b)))
+        (\ (g b h x xs) (if (== (head Int xs) 0) x (g b h (h x (head Int xs)) (tail Int xs)))))
+
+(= (: foldl (-> (: b Set) (-> b Int b) b (List Int) b))
+       (fix (-> (: b Set) (-> b Int b) b (List Int) b) f))
+
+(= circle (= (((: f (-> (-> (: a Set) (-> a (-> Int (List a)))) 
+	                    (-> (: a Set) (-> a (-> Int (List a)))))) 
+	                (\ (f a x n) (if (== n 0) (() a) (:: a x (f a x (- n 1)))))))
+             (fix (-> (: a Set) (-> a (-> Int (List a)))) f)))
+
 
 -- (= foldl (= (((: T Set) (-> (: a Set) (-> (: b Set) (-> (-> b (-> a b)) (-> b (-> (List a) b))))))
 --             ((: f (-> T (-> (: a Set) (-> (: b Set) (-> (-> b (-> a b)) (-> b (-> (List a) b)))))))
 --                   (\ (f a b g x l) (if (nil? a l) x (f a b g (g x (head a l)) (tail a l))))))
 --	        (fix T f)))
-
--- (= circle (= (((: f (-> (-> (: a Set) (-> a (-> Int (List a)))) 
---	                    (-> (: a Set) (-> a (-> Int (List a)))))) 
---	                (\ (f a x n) (if (== n 0) ([] a) (:: a x (f a x (- n 1)))))))
---             (fix (-> (: a Set) (-> a (-> Int (List a)))) f)))
 
 
 (= ^ (= ((PT (-> Int Int Int))
