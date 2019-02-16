@@ -85,19 +85,24 @@ input command: `.\Nona-0.7.8.exe` or just double click the EXE file
 (Module Test ( -- The test file
 
 
--- Ploymorphism
+-- Ploymorphism & Dependent types
 (= (: id (-> (: a Set) a a)) (\ (a x) x))
-(= (: . (-> (: a Set) (: b Set) (: c Set) (-> b c) (-> a b) (-> a c)))
+(= (: . (-> (: a Set) (: b Set) (: c Set) (-> b c) (-> a b) (-> a c))) 
     (\ (a b c f g x) (f (g x))))
 (= (: weird (-> (: x Int) (if (== x 0) Int Bool) String))
 	(\ (x a) "OK"))
 
+
 -- Boolean functions
-(= (: not (-> Bool Bool)) (\ (b) (if b false true)))
+(= (: not (-> Bool Bool)) (\ b (if b false true)))
 (= (: and (-> Bool Bool Bool)) (\ (a b) (if a b false)))
 (= (: or  (-> Bool Bool Bool)) (\ (a b) (if a true b)))
 (= (: xor (-> Bool Bool Bool))
 	(\ (a b) (if (and (or a b) (not (and a b))) true false)))
+
+(= h (= (((: g (-> Int Int)) (\ (x) (+ x x))) ((: y Int) 6)) (g y)))
+
+
 
 -- Inductive dependent sum pair
 (=: Sum (-> (: A Set) (: B (-> A Set)) Set))
@@ -107,15 +112,29 @@ input command: `.\Nona-0.7.8.exe` or just double click the EXE file
 -- Recursion
 (= (: fact (-> Int Int))
    (= (((: f (-> (-> Int Int) (-> Int Int)))
-	      (\ (f n) (if (== n 0) 1 (* n (f (- n 1)))))))
+	      (\ (g n) (if (== n 0) 1 (* n (g (- n 1)))))))
 	 (fix (-> Int Int) f)))
+
+(= (: f (-> (-> (: b Set) (-> b Int b) b (List Int) b)
+     	    (-> (: b Set) (-> b Int b) b (List Int) b)))
+        (\ (g b h x xs) (if (== (head Int xs) 0) x (g b h (h x (head Int xs)) (tail Int xs)))))
+
+(= (: foldl (-> (: b Set) (-> b Int b) b (List Int) b))
+       (fix (-> (: b Set) (-> b Int b) b (List Int) b) f))
+
+(= circle (= (((: f (-> (-> (: a Set) (-> a (-> Int (List a)))) 
+	                    (-> (: a Set) (-> a (-> Int (List a)))))) 
+	                (\ (f a x n) (if (== n 0) (() a) (:: a x (f a x (- n 1)))))))
+             (fix (-> (: a Set) (-> a (-> Int (List a)))) f)))
 
 (= ^ (= ((PT (-> Int Int Int))
          ((: f (-> PT (-> Int Int Int)))
            (\ (f x n) (if (== n 0) 1 (* x (f x (- n 1)))))))
-      (fix PT f)))))
+       (fix PT f)))))
 
--- (= (: foldl (-> (: a Set) (-> (: b Set) (-> (-> b (-> a b)) (-> b (List a)))))) undefined)
+
+-- end of Test --
+
 
 
 ```
