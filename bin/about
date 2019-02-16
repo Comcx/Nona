@@ -19,4 +19,6 @@ Nona-0.7.6  Inductive families completed; record syntax added
             [BUG1] selector dependent problem!!
 Nona-0.7.7  List syntax sugar added
             [BUG1] fixed half
+Nona-0.7.8  List syntax sugar completed! Basic module system
+            [BUG1] nearly fixed
 
