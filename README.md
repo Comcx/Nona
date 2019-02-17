@@ -25,7 +25,7 @@ Nona only support `Windows 64bits` platform right now.
 Jump to the directory where Nona-x.x.exe lies,  
 input command: `.\Nona-0.8.3.exe` or just double click the EXE file
 
-<img width="820" height="460" src="https://github.com/Comcx/Nona/blob/master/repl-0.8.3.jpg"/>
+<img width="800" height="460" src="https://github.com/Comcx/Nona/blob/master/repl-0.8.3.jpg"/>
 
 <br><br>
 ## Incomplete Intro  
