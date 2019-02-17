@@ -33,12 +33,15 @@
 	      (\ (g n) (if (== n 0) 1 (* n (g (- n 1)))))))
 	 (fix (-> Int Int) f)))
 
-(= (: f (-> (-> (: b Set) (-> b Int b) b (List Int) b)
-     	    (-> (: b Set) (-> b Int b) b (List Int) b)))
-        (\ (g b h x xs) (if (== (head Int xs) 0) x (g b h (h x (head Int xs)) (tail Int xs)))))
+(= FT (-> (: b Set) (-> b Int b) b (List Int) b))
+
+(= (: f (-> FT FT))
+        (\ (g b h x xs) 
+        	(if (== (head Int xs) 0) x 
+        		(g b h (h x (head Int xs)) (tail Int xs)))))
 
 (= (: foldl (-> (: b Set) (-> b Int b) b (List Int) b))
-       (fix (-> (: b Set) (-> b Int b) b (List Int) b) f))
+       (fix FT f))
 
 (= circle (= (((: f (-> (-> (: a Set) (-> a (-> Int (List a)))) 
 	                    (-> (: a Set) (-> a (-> Int (List a)))))) 
