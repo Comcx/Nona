@@ -94,11 +94,10 @@ input command: `.\Nona-0.8.1.exe` or just double click the EXE file
 
 
 -- Boolean functions
-(= (: not (-> Bool Bool)) (\ b (if b false true)))
-(= (: and (-> Bool Bool Bool)) (\ (a b) (if a b false)))
-(= (: or  (-> Bool Bool Bool)) (\ (a b) (if a true b)))
-(= (: xor (-> Bool Bool Bool))
-	(\ (a b) (if (and (or a b) (not (and a b))) true false)))
+(= not (\ b (if b false true)))
+(= and (\ (a b) (if a b false)))
+(= or  (\ (a b) (if a true b)))
+(= xor (\ (a b) (if (and (or a b) (not (and a b))) true false)))
 
 (= h (= (((: g (-> Int Int)) (\ (x) (+ x x))) ((: y Int) 6)) (g y)))
 
