@@ -1,0 +1,11 @@
+(Module Prelude ( -- The preluded file
+
+(=: Tuple (-> (: a Set) Set))
+(=: Tuple: (-> (: a Set) (: fst a) (: snd a) (Tuple a)))
+
+(=: Nat Set)
+(=: Z Nat)
+(=: S (-> (: -1 Nat) Nat))))
+
+
+
