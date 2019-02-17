@@ -103,34 +103,9 @@ input command: `.\Nona-0.8.0.exe` or just double click the EXE file
 (= h (= (((: g (-> Int Int)) (\ (x) (+ x x))) ((: y Int) 6)) (g y)))
 
 
-
 -- Inductive dependent sum pair
 (=: Sum (-> (: A Set) (: B (-> A Set)) Set))
 (=: , (-> (: A Set) (: B (-> A Set)) (: a A) (: b (B a)) (Sum A B)))
-
-
--- Recursion
-(= (: fact (-> Int Int))
-   (= (((: f (-> (-> Int Int) (-> Int Int)))
-	      (\ (g n) (if (== n 0) 1 (* n (g (- n 1)))))))
-	 (fix (-> Int Int) f)))
-
-(= (: f (-> (-> (: b Set) (-> b Int b) b (List Int) b)
-     	    (-> (: b Set) (-> b Int b) b (List Int) b)))
-        (\ (g b h x xs) (if (== (head Int xs) 0) x (g b h (h x (head Int xs)) (tail Int xs)))))
-
-(= (: foldl (-> (: b Set) (-> b Int b) b (List Int) b))
-       (fix (-> (: b Set) (-> b Int b) b (List Int) b) f))
-
-(= circle (= (((: f (-> (-> (: a Set) (-> a (-> Int (List a)))) 
-	                    (-> (: a Set) (-> a (-> Int (List a)))))) 
-	                (\ (f a x n) (if (== n 0) (() a) (:: a x (f a x (- n 1)))))))
-             (fix (-> (: a Set) (-> a (-> Int (List a)))) f)))
-
-(= ^ (= ((PT (-> Int Int Int))
-         ((: f (-> PT (-> Int Int Int)))
-           (\ (f x n) (if (== n 0) 1 (* x (f x (- n 1)))))))
-       (fix PT f)))))
 
 
 -- end of Test --
