@@ -3,7 +3,7 @@
 ![Documentation Status](https://github.com/Comcx/Nona/blob/master/icon/doc-passing.svg)  
   
 ***Experimental Nano with dependent types***  
-***Latest version: Nona-0.8.0***  
+***Latest version: Nona-0.8.1***  
 
 ```
    __________________________
@@ -23,7 +23,7 @@
 Nona only support `Windows 64bits` platform right now.  
 
 Jump to the directory where Nona-x.x.exe lies,  
-input command: `.\Nona-0.8.0.exe` or just double click the EXE file
+input command: `.\Nona-0.8.1.exe` or just double click the EXE file
 
 <img width="720" height="420" src="https://github.com/Comcx/Nona/blob/master/repl-0.8.0.jpg"/>
 
@@ -56,7 +56,7 @@ input command: `.\Nona-0.8.0.exe` or just double click the EXE file
   |***"_"***                          |with type `String`|  
   |***(true false)***                 |with type `Bool`|  
   |***(Int Bool String Symbol IO)***  |which is Set|  
-  |***(, :0 :1)***                    |for tuples !note deleted right now!!|  
+  |***(, fst snd)***                  |for tuples !note moved to lib right now!!|  
   |***:: () list***                   |for lists|
   |***print***                        |to print|
   ...  
