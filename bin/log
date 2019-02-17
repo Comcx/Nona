@@ -23,4 +23,5 @@ Nona-0.7.8  List syntax sugar completed! Basic module system
             [BUG1] nearly fixed
 Nona-0.8.0  [BUG1] fixed completely!
 Nona-0.8.1  Type alias problem fixed
+Nona-0.8.3  Type automatic inference added!
 
