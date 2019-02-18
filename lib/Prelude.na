@@ -7,7 +7,7 @@
 (= CT (-> Int (Church Int)))
 (= (: cf (-> CT CT)) (\ (g n) 
 	(if (== n 0) (\ ((: f (-> Int Int)) (: x Int)) x) 
-		         (\ ((: f (-> Int Int)) (: x Int)) (f (g (- n 1) f x))))))
+		     (\ ((: f (-> Int Int)) (: x Int)) (f (g (- n 1) f x))))))
 
 (= church (fix CT cf))
 
