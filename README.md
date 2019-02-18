@@ -90,21 +90,19 @@ input command: `.\Nona-0.8.4.exe` or just double click the EXE file
 (= (: . (-> (: a Set) (: b Set) (: c Set) (-> b c) (-> a b) (-> a c))) 
     (\ (a b c f g x) (f (g x))))
 (= (: weird (-> (: x Int) (if (== x 0) Int Bool) String))
-	(\ (x a) "OK"))
+    (\ (x a) "OK"))
 
 
 -- Boolean functions
-(= not (\ b (if b false true)))
+(= not (\ b     (if b false true)))
 (= and (\ (a b) (if a b false)))
 (= or  (\ (a b) (if a true b)))
 (= xor (\ (a b) (if (and (or a b) (not (and a b))) true false)))
 
-(= h (= (((: g (-> Int Int)) (\ (x) (+ x x))) ((: y Int) 6)) (g y)))
-
 
 -- Inductive dependent sum pair
 (=: Sum (-> (: A Set) (: B (-> A Set)) Set))
-(=: , (-> (: A Set) (: B (-> A Set)) (: a A) (: b (B a)) (Sum A B)))
+(=: ,   (-> (: A Set) (: B (-> A Set)) (: a A) (: b (B a)) (Sum A B)))
 
 
 -- end of Test --
