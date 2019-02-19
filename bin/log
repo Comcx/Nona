@@ -29,4 +29,5 @@ Nona-0.8.4  [BUG2] fixed! Many tests passed!
             [BUG3] Nested lambda inference problem
 Nona-0.8.5  [BUG4] lambda closure type inference problem
             [BUG4] Fixed!
+            Parser extended
 
