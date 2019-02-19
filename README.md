@@ -77,6 +77,15 @@ input command: `.\Nona-0.8.5.exe` or just double click the EXE file
     `(na <file>)` to load defs  
     `(no <file>)` to load *.no files  
     ...  
+    
+## Features  
+   - Lexical scope mangement  
+   - Purely functional  
+   - Inductive family  
+   - Dependent type system  
+   - Type inference with unification  
+   - Church numeral can be built(refer to lib/Prelude.na)  
+   - First class record and typeclass
 
 
 ## Examples
