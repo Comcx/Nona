@@ -3,25 +3,21 @@
 
 (=: Tuple (-> (: a Set) Set))
 (=: , (-> (: type Set) 
-	    (: fst type) 
-	    (: snd type) (Tuple type)))
-
+	  (: fst type) 
+	  (: snd type) (Tuple type)))
 
 (= Church (\ a (-> (-> a a) a a)))
 (= CT (-> Int (Church Int)))
 (= (: cf (-> CT CT)) (\ (g n) 
-	(if (== n 0) (\ ((: f (-> Int Int)) (: x Int)) x) 
-		         (\ ((: f (-> Int Int)) (: x Int)) (f (g (- n 1) f x))))))
+   (if (== n 0) (\ ((: f (-> Int Int)) (: x Int)) x) 
+		(\ ((: f (-> Int Int)) (: x Int)) (f (g (- n 1) f x))))))
 
 (= (: church (-> Int (Church Int))) (fix CT cf))
-
 
 
 (=: Nat Set)
 (=: Z Nat)
 (=: S (-> (: -1 Nat) Nat))
-
-
 
 
 ))---------------- End of Prelude ---------------((
