@@ -87,7 +87,7 @@ input command: `.\Nona-0.8.5.exe` or just double click the EXE file
 
 -- Ploymorphism & Dependent types
 (= (: id (-> (: a Set) a a)) (\ (a x) x))
-(= (: . (-> (: a Set) (: b Set) (: c Set) (-> b c) (-> a b) (-> a c))) 
+(= (: .  (-> (: a Set) (: b Set) (: c Set) (-> b c) (-> a b) (-> a c))) 
     (\ (a b c f g x) (f (g x))))
 (= (: weird (-> (: x Int) (if (== x 0) Int Bool) String))
     (\ (x a) "OK"))
@@ -105,7 +105,7 @@ input command: `.\Nona-0.8.5.exe` or just double click the EXE file
 (=: ,   (-> (: A Set) (: B (-> A Set)) (: a A) (: b (B a)) (Sum A B)))
 
 
--- end of Test --
+))--------- end of Test ---------((
 
 
 
