@@ -85,9 +85,9 @@ input command: `.\Nona-0.8.5.exe` or just double click the EXE file
    - Dependent type system  
    - Type inference with unification  
    - Church numeral can be built(refer to lib/Prelude.na)  
-   - First class record and typeclass
-
-
+   - First class record and typeclass  
+   
+     
 ## Examples
 
 ```scala
