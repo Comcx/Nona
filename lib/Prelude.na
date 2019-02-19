@@ -1,20 +1,29 @@
 (Module Prelude ( -- The preluded file
 
+
 (=: Tuple (-> (: a Set) Set))
-(=: Tuple: (-> (: a Set) (: fst a) (: snd a) (Tuple a)))
+(=: , (-> (: type Set) 
+	    (: fst type) 
+	    (: snd type) (Tuple type)))
+
 
 (= Church (\ a (-> (-> a a) a a)))
 (= CT (-> Int (Church Int)))
 (= (: cf (-> CT CT)) (\ (g n) 
 	(if (== n 0) (\ ((: f (-> Int Int)) (: x Int)) x) 
-		     (\ ((: f (-> Int Int)) (: x Int)) (f (g (- n 1) f x))))))
+		         (\ ((: f (-> Int Int)) (: x Int)) (f (g (- n 1) f x))))))
 
-(= church (fix CT cf))
+(= (: church (-> Int (Church Int))) (fix CT cf))
+
 
 
 (=: Nat Set)
 (=: Z Nat)
-(=: S (-> (: -1 Nat) Nat))))
+(=: S (-> (: -1 Nat) Nat))
 
+
+
+
+))---------------- End of Prelude ---------------((
 
 
