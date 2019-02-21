@@ -31,21 +31,22 @@ input command: `.\Nona-0.8.6.exe` or just double click the EXE file
 ## Incomplete Intro  
 
 * #### Expression :=
-  |Format                                     | Explanation|
-  |-------------------------------------------|-------------|
-  |***Variable***                             | Single variable|
-  |***(Fun params)***                         | Lambda application|
-  |***(: Expression type)***                  | Type signature|
-  |***(= (bindings) Expression)***            | Bindings|
-  |***(=: (bindings) Expression)***           | Inductive families|
-  |***(if Expression Expression Expression)***| Conditional|
-  |***(\ (params) Expression)***              | Lambda abstraction|
-  |***(-> (: a t) b)***                       | Dependent function space|
+  |Format                               | Explanation|
+  |-------------------------------------|-------------|
+  |***Variable***                       | Single variable|
+  |***(Fun params)***                   | Lambda application|
+  |***(: Expr type)***                  | Type signature|
+  |***(= (bindings) Expr)***            | Bindings|
+  |***(=: (bindings) Expr)***           | Inductive families|
+  |***(if Expr Expr Expr)***            | Conditional|
+  |***(\ (params) Expr)***              | Lambda abstraction|
+  |***(-> (: a t) b)***                 | Dependent function space|
   <br>
   
 * ### Declaration :=
   - ***(= var Expression)***  
   - ***(=: var Type)***
+  - ***(: Expr Type)***
   <br>
  
 * ### Preluded terms:
