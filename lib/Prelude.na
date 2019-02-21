@@ -1,10 +1,10 @@
 (Module Prelude ( -- The preluded file
 
 
-(=: Tuple (-> (: a Set) Set))
-(=: , (-> (: type Set) 
-	  (: fst type) 
-	  (: snd type) (Tuple type)))
+(=: Tuple (-> (: a Set) (: b Set) Set))
+(=: , (-> (: T1 Set) (: T2 Set) 
+	  (: fst T1) 
+	  (: snd T2) (Tuple T1 T2)))
 
 (= Church (\ a (-> (-> a a) a a)))
 (= CT (-> Int (Church Int)))
