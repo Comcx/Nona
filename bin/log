@@ -30,4 +30,6 @@ Nona-0.8.4  [BUG2] fixed! Many tests passed!
 Nona-0.8.5  [BUG4] lambda closure type inference problem
             [BUG4] Fixed!
             Parser extended
+Nona-0.8.6  String = (List Symbol) now
+            Many bugs fixed
 
