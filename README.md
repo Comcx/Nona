@@ -20,7 +20,7 @@
 
 ## Getting Started!
 
-Nona only support `Windows 64bits` platform right now.  
+Nona only support `Windows 64bits` and `Linux 64bits` platform right now.  
 
 Jump to the directory where Nona-x.x.exe lies,  
 input command: `.\Nona-0.8.6.exe` or just double click the EXE file
