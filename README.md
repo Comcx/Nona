@@ -112,10 +112,10 @@ Jump to the directory where Nona-x.x.exe lies,
 
 
 -- Boolean functions
-(= not (\ b     (if b false true)))
-(= and (\ (a b) (if a b false)))
-(= or  (\ (a b) (if a true b)))
-(= xor (\ (a b) (if (and (or a b) (not (and a b))) true false)))
+(= (not b)   (if b false true))
+(= (and a b) (if a b false))
+(= (or  a b) (if a true b))
+(= (xor a b) (if (and (or a b) (not (and a b))) true false))
 
 
 -- Inductive dependent sum pair
