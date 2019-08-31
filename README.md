@@ -43,6 +43,7 @@ Jump to the directory where Nona-x.x.exe lies,
   |***(Fun params)***                   | Lambda application|
   |***(: Expr type)***                  | Type signature|
   |***(= (bindings) Expr)***            | Bindings|
+  |***(=o (pattern) Expr)***            | Recursive bindings|
   |***(=: (bindings) Expr)***           | Inductive families|
   |***(if Expr Expr Expr)***            | Conditional|
   |***(\ (params) Expr)***              | Lambda abstraction|
@@ -50,7 +51,8 @@ Jump to the directory where Nona-x.x.exe lies,
   <br>
   
 * ### Declaration :=
-  - ***(= var Expression)***  
+  - ***(= pattern Expression)***  
+  - ***(=o pattern Expression)***  
   - ***(=: var Type)***
   - ***(: Expr Type)***
   <br>
@@ -73,7 +75,8 @@ Jump to the directory where Nona-x.x.exe lies,
   
   - **Global environment:**  
     You can:  
-      type in `(= <variable> <expression>)` to add variable to global environment;  
+      type in `(=  <pattern>  <expression>)` to add definition to global environment;  
+      type in `(=o <pattern>  <expression>)` to add recursive definition to global environment;  
       type in `(=: <variable> <type>)` to construct new types to global environment.  
     
   - **Commands:**  
@@ -126,12 +129,13 @@ Jump to the directory where Nona-x.x.exe lies,
 (=o ((: fact (-> Int Int)) n)
   (if (== n 0) 1 (* n (fact (- n 1)))))
 
-(=o ((: foldl-Int (-> (: b Set) (-> b Int b) b (List Int) b))
-  b h x xs)
+(: foldl-Int (-> (: b Set) (-> b Int b) b (List Int) b))
+(=o (foldl-Int b h x xs)
     (if (== (head Int xs) 0) x
       (foldl-Int b h (h x (head Int xs)) (tail Int xs))))
 
-(=o ((: circle (-> (: a Set) a Int (List a))) a x n)
+(: circle (-> (: a Set) a Int (List a)))
+(=o (circle a x n)
   (if (== n 0) (() a) (:: a x (circle a x (- n 1)))))
 
 (=o ((: ^ (-> Int Int Int)) x n)
