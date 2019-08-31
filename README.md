@@ -31,7 +31,7 @@ Jump to the directory where Nona-x.x.exe lies,
       (input command: '.\Nona-0.8.6-linux')))
 ```
 
-<img width="770" height="500" src="https://github.com/Comcx/Nona/blob/master/repl-0.8.7.jpg"/>
+<img width="875" height="563" src="https://github.com/Comcx/Nona/blob/master/repl-0.8.7.jpg"/>
 
 <br><br>
 ## Incomplete Intro  
