@@ -122,6 +122,21 @@ Jump to the directory where Nona-x.x.exe lies,
 (=: Sum (-> (: A Set) (: B (-> A Set)) Set))
 (=: ,   (-> (: A Set) (: B (-> A Set)) (: a A) (: b (B a)) (Sum A B)))
 
+-- Recursion
+(=o ((: fact (-> Int Int)) n)
+  (if (== n 0) 1 (* n (fact (- n 1)))))
+
+(=o ((: foldl-Int (-> (: b Set) (-> b Int b) b (List Int) b))
+  b h x xs)
+    (if (== (head Int xs) 0) x
+      (foldl-Int b h (h x (head Int xs)) (tail Int xs))))
+
+(=o ((: circle (-> (: a Set) a Int (List a))) a x n)
+  (if (== n 0) (() a) (:: a x (circle a x (- n 1)))))
+
+(=o ((: ^ (-> Int Int Int)) x n)
+  (if (== n 0) 1 (* x (^ x (- n 1)))))
+
 
 ))--------- end of Test ---------((
 
