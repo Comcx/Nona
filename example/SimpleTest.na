@@ -1,0 +1,69 @@
+
+
+(Module Test ( -- The test file
+
+
+-- Ploymorphism & Dependent types
+(= (: id (-> (: a Set) a a)) (\ (a x) x))
+(= (: .  (-> (: a Set) (: b Set) (: c Set) (-> b c) (-> a b) (-> a c))) 
+    (\ (a b c f g x) (f (g x))))
+(= (: weird (-> (: x Int) (if (== x 0) Int Bool) String))
+	(\ (x a) "OK"))
+
+
+-- Boolean functions
+(= (not b)   (if b false true))
+(= ((: and (-> Bool Bool Bool)) a b) (if a b false))
+(= (or  a b) (if a true b))
+(= (xor a b) (if (and (or a b) (not (and a b))) true false))
+
+(= h (= ((g (\ x (+ x x))) (y 6)) (g y)))
+
+
+
+-- Inductive dependent sum pair
+(=: Sum (-> (: A Set) (: B (-> A Set)) Set))
+(=: ,   (-> (: A Set) (: B (-> A Set)) (: a A) (: b (B a)) (Sum A B)))
+
+
+-- Recursion
+(: fact (-> Int Int))
+(=o (fact n)
+  (if (== n 0) 1 (* n (fact (- n 1)))))
+
+(: foldl-Int (-> (: b Set) (-> b Int b) b (List Int) b))
+(=o (foldl-Int b h x xs)
+    (if (== (head Int xs) 0) x
+      (foldl-Int b h (h x (head Int xs)) (tail Int xs))))
+
+(: circle (-> (: a Set) a Int (List a)))
+(=o (circle a x n)
+  (if (== n 0) (() a) (:: a x (circle a x (- n 1)))))
+
+(=o ((: ^ (-> Int Int Int)) x n)
+  (if (== n 0) 1 (* x (^ x (- n 1)))))
+
+
+
+
+))-- end of Test --((
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
